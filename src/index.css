@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For the banner */
+.banner-overlay {
+  transition: opacity 1s ease-out;
+  cursor: pointer;
+  background-image: url('https://i.ibb.co.com/BnM5zjd/3624350.jpg');
+  /*https://i.ibb.co.com/HLvk5Kb/pexels-anna-nekrashevich-6203553.jpg*/
+  /* background-image: url('https://i.ibb.co.com/HLvk5Kb/pexels-anna-nekrashevich-6203553.jpg');  */
+  background-size: cover;
+  background-position: bottom 40% center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2); 
+
+}
+
+
+.dark .banner-overlay {
+  /* background-image: url('https://i.ibb.co.com/dLYhsFq/1353890-1.jpg'); Dark mode image */
+  background-image: none;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.darktheme{
+  background-image: url('https://i.ibb.co.com/dmSn4Bd/buld1-removebg-preview.png'); 
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dark .darktheme{
+  background-image: url('https://i.ibb.co.com/ccqBjrR/bulb2-removebg-preview.png'); 
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+/* For the content section */
+.cardparent {
+  transition: opacity 0.5s ease-in-out;
+  display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.cardparent.opacity-0 {
+  opacity: 0;
+}
+
+.cardparent.opacity-100 {
+  opacity: 1;
+}
+
+
+
+
+.review-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+  .confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 1024px) {
+
+    .cardparent{
+      grid-template-columns: repeat(2,1fr);
+    }
+   
+  }
+  @media (max-width: 940px) {
+
+   
+  }
+
+  @media (max-width: 620px) {
+
+    .cardparent{
+      grid-template-columns: repeat(1,1fr);
+    }
+   
+   
+  }
