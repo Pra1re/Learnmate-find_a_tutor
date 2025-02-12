@@ -66,7 +66,7 @@ const PopularLanguages = () => {
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.5 }}
               variants={cardVariants}
-              className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+              className="flex flex-col justify-between bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105 h-[350px]"
             >
               <div className="text-6xl mb-6 text-center dark:text-white">
                 {language.flag}
