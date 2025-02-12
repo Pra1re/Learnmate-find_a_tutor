@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router';
 
 const PopularLanguages = () => {
   const languages = [
@@ -78,11 +79,11 @@ const PopularLanguages = () => {
                 {language.description}
               </p>
               <div className="text-center">
-                <button
+                <Link to="/alltutor"
                   className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300"
                 >
-                  Explore {language.name}
-                </button>
+                  Explore
+                </Link>
               </div>
             </motion.div>
           ))}
