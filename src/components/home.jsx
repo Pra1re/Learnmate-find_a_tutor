@@ -7,6 +7,8 @@ import Firstbanner from './firstbanner';
 import Stats from './stats';
 import UserReviews from './review';
 import WhyChooseUs from './why';
+import PopularLanguages from './populerlang';
+
 
 
 
@@ -19,6 +21,7 @@ const Home = () => {
             <Stats></Stats>
             <Tutors/>
             <UserReviews></UserReviews>
+            <PopularLanguages/>
             <WhyChooseUs></WhyChooseUs>
             
             
