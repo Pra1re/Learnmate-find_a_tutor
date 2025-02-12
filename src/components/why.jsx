@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
             <p className="text-center text-gray-600 dark:text-gray-300 mb-10">
                 Discover the benefits of learning with us. Our platform is designed to help you achieve your goals efficiently and enjoyably.
             </p>
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+            <div className=" w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {features.map((feature, index) => (
                     <div
                         key={index}

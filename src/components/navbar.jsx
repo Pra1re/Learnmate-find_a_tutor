@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { authcontext } from "../provider/authprovider";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
+import { div } from "framer-motion/client";
 
 const Navbar = () => {
   const { user, logout, toggletheme } = useContext(authcontext);
@@ -12,8 +13,9 @@ const Navbar = () => {
   };
 
   return (
+    <div className="navbar bg-gray-900 py-4 lg:px-6 px-4 shadow-md dark:bg-black">
     <motion.div
-      className="navbar bg-gray-900 py-4 px-6 shadow-md dark:bg-black"
+      className="navbar bg-gray-900 shadow-md dark:bg-black lg:w-[95%] m-auto"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -166,6 +168,7 @@ const Navbar = () => {
         <div onClick={toggletheme} className="darktheme w-[26px] h-[26px] cursor-pointer" ></div>
       </div>
     </motion.div>
+    </div>
   );
   
   

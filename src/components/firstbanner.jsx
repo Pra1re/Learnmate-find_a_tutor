@@ -3,7 +3,9 @@ import { Link } from "react-router";
 
 const Firstbanner = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-gray-900 pb-16 pt-12 md:pb-36 md:pt-20 dark:bg-black">
+    <div className="bg-gray-900 dark:bg-black">
+
+      <div className="w-[92%] m-auto flex flex-col md:flex-row items-center justify-between gap-8 bg-gray-900 pb-16 pt-12 md:pb-36 md:pt-20 dark:bg-black">
       
       <motion.div
         className="w-full md:w-[35%] relative hidden md:block"
@@ -61,6 +63,7 @@ const Firstbanner = () => {
           Explore
         </Link>
       </motion.div>
+      </div>
     </div>
   );
   
