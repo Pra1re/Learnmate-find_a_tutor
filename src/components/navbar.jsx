@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-gray-900 py-4 lg:px-6 px-4 shadow-md dark:bg-black">
+    <div className="navbar bg-gray-900 py-4 lg:px-2 px-4 shadow-md dark:bg-black">
     <motion.div
       className="navbar bg-gray-900 shadow-md dark:bg-black lg:w-[95%] m-auto"
       initial={{ opacity: 0, y: -20 }}
