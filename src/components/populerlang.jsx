@@ -53,8 +53,8 @@ const PopularLanguages = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
-      <div className="container mx-auto px-4">
+    <section className=" py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+      <div className="w-[95%] m-auto container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">
           Popular Languages to Learn
         </h2>
